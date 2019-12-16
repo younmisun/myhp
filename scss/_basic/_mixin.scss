@@ -1,0 +1,4 @@
+
+$imgUrl:("../img/");
+@mixin BgImg($img){background-image:url($imgUrl+$img);
+                   background-size:contain; background-repeat:no-repeat;}

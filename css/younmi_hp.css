@@ -1,0 +1,426 @@
+@keyframes youmi_work {
+  0% {
+    transform: rotatey(0);
+    left: 100%;
+    top: 100px; }
+  20% {
+    transform: rotatey(0);
+    left: -30%;
+    top: 900px; }
+  21% {
+    transform: rotateY(180deg);
+    left: -30%;
+    top: 400px; }
+  50% {
+    transform: rotateY(180deg);
+    left: 100%;
+    top: 800px; }
+  51% {
+    transform: rotatey(0);
+    left: 100%;
+    top: 100px; }
+  70% {
+    transform: rotatey(0);
+    left: -30%;
+    top: 500px; }
+  71% {
+    transform: rotateY(180deg);
+    left: -30%;
+    top: 1000px; }
+  100% {
+    transform: rotateY(180deg);
+    left: 100%;
+    top: 10px; } }
+
+/* BODY */
+body {
+  overflow: hidden; }
+
+#wrap {
+  width: 100%;
+  height: 100%; }
+
+.younmi {
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  top: 0;
+  animation: youmi_work 90s infinite linear; }
+  .younmi .younmis {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/homi.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 200ms ease; }
+
+/* HEADBOX */
+#headBox {
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin: auto;
+  z-index: 1;
+  padding-top: 180px; }
+  #headBox h1 {
+    width: 500px;
+    height: 330px;
+    margin: auto;
+    background-image: url("../img/homi_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #headBox .gnb {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px; }
+    #headBox .gnb ul {
+      width: 100%;
+      height: 100%; }
+      #headBox .gnb ul li {
+        width: 200px;
+        margin-bottom: 10px; }
+        #headBox .gnb ul li:nth-of-type(1) {
+          height: 62px;
+          background-image: url("../img/menu/menu_aboutMe.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        #headBox .gnb ul li:nth-of-type(2) {
+          height: 76px;
+          background-image: url("../img/menu/menu_portfolio.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        #headBox .gnb ul li:nth-of-type(3) {
+          height: 58px;
+          background-image: url("../img/menu/menu_gallery.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        #headBox .gnb ul li:nth-of-type(4) {
+          height: 58px;
+          background-image: url("../img/menu/menu_what.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+      #headBox .gnb ul button {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer; }
+
+/* POPUP&MENU */
+#popUp {
+  /* display:none; */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  width: 1000px;
+  height: 700px;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.95);
+  background-image: url("../img/box.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+  #popUp .btn_close {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/close_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  #popUp #aboutMe {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 35px; }
+    #popUp #aboutMe .about_cha {
+      position: absolute;
+      right: 20px;
+      width: 200px;
+      height: 200px;
+      background-image: url("../img/homi.gif");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    #popUp #aboutMe .about_list {
+      width: 700px;
+      height: 500px;
+      margin: 15px auto; }
+      #popUp #aboutMe .about_list dt {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 0 10px; }
+      #popUp #aboutMe .about_list .about_basic {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 20px; }
+      #popUp #aboutMe .about_list .about_list {
+        width: 100%;
+        height: auto;
+        line-height: 25px;
+        font-size: 15px; }
+        #popUp #aboutMe .about_list .about_list em {
+          font-style: normal;
+          font-weight: bold; }
+        #popUp #aboutMe .about_list .about_list dt {
+          width: 80px;
+          height: 72px;
+          float: left; }
+        #popUp #aboutMe .about_list .about_list dd {
+          width: 620px; }
+          #popUp #aboutMe .about_list .about_list dd:nth-of-type(3n) {
+            margin-bottom: 10px; }
+      #popUp #aboutMe .about_list .about_skill {
+        font-size: 15px;
+        text-transform: capitalize; }
+        #popUp #aboutMe .about_list .about_skill dt {
+          width: 80px; }
+        #popUp #aboutMe .about_list .about_skill dd {
+          float: left;
+          width: 175px;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 10px;
+          margin-left: 10px; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(4n) {
+            width: 100px; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(1) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/ai.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(2) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/ps.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(3) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/in.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(4) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/html.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(5) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/css.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(6) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/jquery.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(7) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/git.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #aboutMe .about_list .about_skill dd:nth-of-type(8) i {
+            float: left;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../img/icon/office.png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+  #popUp #portfolio {
+    width: 100%;
+    height: 100%;
+    display: block; }
+    #popUp #portfolio .pf_menu {
+      float: left;
+      width: 20%;
+      height: 100%; }
+      #popUp #portfolio .pf_menu button {
+        cursor: pointer;
+        font-size: 16px; }
+      #popUp #portfolio .pf_menu li:last-child {
+        position: absolute;
+        bottom: 80px;
+        width: 150px;
+        height: 117px;
+        background-image: url("../img/pdf_download.png");
+        background-size: contain;
+        background-repeat: no-repeat; }
+        #popUp #portfolio .pf_menu li:last-child a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+    #popUp #portfolio article {
+      float: right;
+      width: 80%;
+      height: 100%;
+      overflow-y: scroll; }
+      #popUp #portfolio article ul {
+        width: 200px;
+        height: 30px;
+        margin: auto; }
+        #popUp #portfolio article ul li {
+          float: left;
+          width: 100px;
+          height: 100%; }
+          #popUp #portfolio article ul li button {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            cursor: pointer; }
+      #popUp #portfolio article .info_text {
+        display: block;
+        width: 100%;
+        margin: 30px 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 25px; }
+        #popUp #portfolio article .info_text em {
+          font-style: normal;
+          font-size: 15px;
+          font-weight: bold;
+          padding: 0 10px; }
+        #popUp #portfolio article .info_text p {
+          font-size: 10px; }
+      #popUp #portfolio article > div > div {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px; }
+    #popUp #portfolio .pf_uiux .pf_wrap {
+      width: 100%;
+      height: auto; }
+    #popUp #portfolio .pf_uiux .hp_info_seoul {
+      width: 600px;
+      height: auto;
+      margin: auto; }
+      #popUp #portfolio .pf_uiux .hp_info_seoul .hp_img {
+        width: 600px;
+        height: 1061px;
+        background-image: url("../img/seoul_hp_img/seoul_botanic_main.jpg");
+        background-size: contain;
+        background-repeat: no-repeat; }
+    #popUp #portfolio .pf_uiux .hp_info_sarang {
+      display: none;
+      width: 600px;
+      height: auto;
+      margin: auto; }
+    #popUp #portfolio .pf_product {
+      display: none; }
+      #popUp #portfolio .pf_product .product_bath {
+        width: 620px;
+        height: auto; }
+        #popUp #portfolio .pf_product .product_bath .bath_img {
+          width: 100%;
+          height: 870px; }
+          #popUp #portfolio .pf_product .product_bath .bath_img .bath_01 {
+            height: 620px;
+            height: 715px;
+            background-image: url("../img/product/linefriend(1).png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px; }
+          #popUp #portfolio .pf_product .product_bath .bath_img .bath_02 {
+            float: left;
+            width: 25%;
+            height: 155px;
+            background-image: url("../img/product/linefriend(2).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_bath .bath_img .bath_03 {
+            float: left;
+            width: 25%;
+            height: 155px;
+            background-image: url("../img/product/linefriend(3).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_bath .bath_img .bath_04 {
+            float: left;
+            width: 25%;
+            height: 155px;
+            background-image: url("../img/product/linefriend(4).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_bath .bath_img .bath_05 {
+            float: left;
+            width: 25%;
+            height: 155px;
+            background-image: url("../img/product/linefriend(5).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+      #popUp #portfolio .pf_product .product_kitchen {
+        display: none;
+        width: 600px;
+        height: auto;
+        margin: auto; }
+        #popUp #portfolio .pf_product .product_kitchen .kitchen_img {
+          width: 100%;
+          height: 600px; }
+          #popUp #portfolio .pf_product .product_kitchen .kitchen_img .kitchen_01 {
+            height: 600px;
+            background-image: url("../img/product/kitchen(1).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_kitchen .kitchen_img .kitchen_02 {
+            float: left;
+            width: 25%;
+            height: 150px;
+            background-image: url("../img/product/kitchen(2).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_kitchen .kitchen_img .kitchen_03 {
+            float: left;
+            width: 25%;
+            height: 150px;
+            background-image: url("../img/product/kitchen(3).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_kitchen .kitchen_img .kitchen_04 {
+            float: left;
+            width: 25%;
+            height: 150px;
+            background-image: url("../img/product/kitchen(4).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+          #popUp #portfolio .pf_product .product_kitchen .kitchen_img .kitchen_05 {
+            float: left;
+            width: 25%;
+            height: 150px;
+            background-image: url("../img/product/kitchen(5).png");
+            background-size: contain;
+            background-repeat: no-repeat; }
+    #popUp #portfolio .pf_etc {
+      display: none;
+      text-align: center; }
