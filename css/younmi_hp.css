@@ -240,7 +240,7 @@ body {
             display: block;
             width: 40px;
             height: 40px;
-            background-image: url("../img/icon/jquery.png");
+            background-image: url("../img/icon/jq.png");
             background-size: contain;
             background-repeat: no-repeat; }
           #popUp #aboutMe .about_list .about_skill dd:nth-of-type(7) i {
