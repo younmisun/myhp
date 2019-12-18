@@ -50,7 +50,6 @@
   closeBtn.on('click',function(e){
     e.preventDefault();
     popUp.hide();
-    location.reload();
   })
 
   let jump = 0;
