@@ -2,7 +2,8 @@
   0% {
     transform: rotatey(0);
     left: 100%;
-    top: 100px; }
+    top: 100px;
+    z-index: 2; }
   20% {
     transform: rotatey(0);
     left: -30%;
@@ -117,7 +118,7 @@ body {
   right: 0;
   bottom: 0;
   margin: auto;
-  z-index: 2;
+  z-index: 100;
   width: 1000px;
   height: 700px;
   padding: 60px;
@@ -165,10 +166,6 @@ body {
         font-size: 16px;
         margin-left: 10px;
         margin-bottom: 20px; }
-        #popUp #aboutMe .about_list .about_basic a {
-          display: block;
-          width: 232px;
-          height: 24px; }
       #popUp #aboutMe .about_list .about_list {
         width: 100%;
         height: auto;

@@ -15,10 +15,6 @@
   const aA = aboutMe.find('a');
   const shiny = $('.shiny');
 
-  setInterval(function(){
-    shiny.toggle();
-  },200)
-
   //ABOUT PORTFOLIO
   const portfolio = $('#portfolio');
   const pfMenu = portfolio.children('.pf_menu');
@@ -57,8 +53,6 @@
     jump = parseInt(Math.random()*100 + 100);
     $(this).css({transform:`translate(${jump}px, ${-jump/2}px)`});
   })
-  
-  //ABOUT ME ZONE
   
   //PORTFOLIO ZONE
   pfMenuBtn.on('click',function(){
