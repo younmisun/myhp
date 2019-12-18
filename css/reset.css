@@ -16,7 +16,7 @@ button{font-family:inherit;}
 .hidden {display:block; overflow:hidden; width:0; height:0;}
 
 a {color:#191919; text-decoration:none;}
-a:hover,a:focus {color:#fff;}
+a:hover,a:focus {color:#191919;}
 
 main, header, footer, aside, nav, section, article, figure, figcaption
 {display:block; width:0; height:0;}

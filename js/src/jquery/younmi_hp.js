@@ -10,8 +10,16 @@
 
   const homi = $('.younmis');
 
-  //portfolioZone
+  //ABOUT ME
+  const aboutMe = $('#aboutMe');
+  const aA = aboutMe.find('a');
+  const shiny = $('.shiny');
 
+  setInterval(function(){
+    shiny.toggle();
+  },200)
+
+  //ABOUT PORTFOLIO
   const portfolio = $('#portfolio');
   const pfMenu = portfolio.children('.pf_menu');
   const pfMenuBtn = pfMenu.find('button');
@@ -20,32 +28,17 @@
   const pfConMenu = pfArtCon.find('ul');
   const pfConBtn = pfConMenu.find('button');
   const pfCon = pfArtCon.children('div');
-  
-  pfMenuBtn.on('click',function(){
-    let i = $(this).parents('li').index();
-    // let i = pfArtCon.index();
-    console.log(i);
-    pfArtCon.eq(i).siblings('article').hide();
-    pfArtCon.eq(i).show();
-  })
-  
-  pfConBtn.on('click',function(e){
-    e.preventDefault();
-    let i = $(this).parents('li').index();
-    //console.log(i);
-    // pfCon.eq(i).show();    
-    // pfCon.eq(i).siblings('div').hide();
-    let pfWrap =  $(this).parents('ul').next('.pf_wrap');
-    let pfDiv = pfWrap.children('div');
-    pfDiv.hide();
-    pfDiv.eq(i).show();
 
-  })
-  // PRODUCT
+  //ABOUT GALLERY
+  const gallery = $('#gallery');
 
+  const gallWrap = gallery.children('.gall_wrap');
+  const gallPrev = gallWrap.children('.gall_preview');
+  const gallBtn = gallPrev.find('button');
+  const gallImgWrap = gallWrap.children('.gall_img');
+  const gallImg = gallImgWrap.find('div');
 
-  
-  
+  //GNB
   gnbBtn.on('click',function(e){
     e.preventDefault();
     let i = $(this).parent('li').index();
@@ -57,6 +50,7 @@
   closeBtn.on('click',function(e){
     e.preventDefault();
     popUp.hide();
+    location.reload();
   })
 
   let jump = 0;
@@ -64,6 +58,34 @@
     jump = parseInt(Math.random()*100 + 100);
     $(this).css({transform:`translate(${jump}px, ${-jump/2}px)`});
   })
+  
+  //ABOUT ME ZONE
+  
+  //PORTFOLIO ZONE
+  pfMenuBtn.on('click',function(){
+    let i = $(this).parents('li').index();
+    pfArtCon.eq(i).siblings('article').hide();
+    pfArtCon.eq(i).show();
+  })
+  
+  pfConBtn.on('click',function(e){
+    e.preventDefault();
+    let i = $(this).parents('li').index();
+    let pfWrap =  $(this).parents('ul').next('.pf_wrap');
+    let pfDiv = pfWrap.children('div');
+    pfDiv.hide();
+    pfDiv.eq(i).show();
+  });
+
+  //GALLERY ZONE
+  gallBtn.on('click',function(e){
+    e.preventDefault();
+    let i = $(this).parents('li').index();
+    gallImg.eq(i).show();
+    gallImg.eq(i).siblings('div').hide();
+
+  })
+
 
   
   })(jQuery);
