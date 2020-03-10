@@ -151,13 +151,13 @@ body { overflow: hidden; }
 
 #popUp #portfolio .pf_editorial .ed_img01 .ed_bro_img_02 { width: 500px; height: 250px; background-image: url("../img/bro_img/viol_eng(2).jpg"); background-size: contain; background-repeat: no-repeat; }
 
-#popUp #portfolio .pf_editorial .ed_img02 { width: 355px; height: 500px; margin: auto; margin-top: 20px; }
+#popUp #portfolio .pf_editorial .ed_img02 { display: none; width: 355px; height: 500px; margin: auto; margin-top: 20px; }
 
 #popUp #portfolio .pf_editorial .ed_img02 .ed_bro_img_03 { width: 355px; height: 250px; margin-bottom: 10px; background-image: url("../img/bro_img/vior_bruuchure_01.jpg"); background-size: contain; background-repeat: no-repeat; }
 
 #popUp #portfolio .pf_editorial .ed_img02 .ed_bro_img_04 { width: 355px; height: 250px; background-image: url("../img/bro_img/vior_bruuchure_02.jpg"); background-size: contain; background-repeat: no-repeat; }
 
-#popUp #portfolio .pf_editorial .ed_img03 { width: 355px; height: 500px; }
+#popUp #portfolio .pf_editorial .ed_img03 { display: none; width: 355px; height: 500px; }
 
 #popUp #portfolio .pf_editorial .ed_img03 .ed_bro_img_05 { width: 355px; height: 250px; margin-bottom: 10px; background-image: url("../img/bro_img/vior_bruuchure_03.jpg"); background-size: contain; background-repeat: no-repeat; }
 
